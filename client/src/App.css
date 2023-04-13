@@ -7,8 +7,3 @@
   outline: none;
   border: none;
 }
-
-html {
-  scroll-behavior: smooth;
-  font-size: 62.5%;
-}

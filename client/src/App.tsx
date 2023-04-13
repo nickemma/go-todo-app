@@ -20,7 +20,7 @@ function App() {
   const { data, mutate } = useSWR<Todo[]>('api/todos', fetcher);
 
   async function markTodoAdDone(id: number) {
-    const updated = await fetch(`${ENDPOINT}/api/todosn/${id}/done`, {
+    const updated = await fetch(`${ENDPOINT}/api/todos/${id}/done`, {
       method: 'PATCH',
     }).then((r) => r.json());
 
